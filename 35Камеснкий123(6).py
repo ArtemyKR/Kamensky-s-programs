@@ -6,7 +6,10 @@ def maxi(a, b):
         c=b
     return(c)
 
-
+import os.path
+if os.path.exists('1.txt')==False :
+    print('There is not file')
+    exit(909)
 f=open('1.txt', 'r')
 b=f.read(1)
 if not b:

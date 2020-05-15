@@ -1,3 +1,7 @@
+import os.path
+if os.path.exists('1.txt')==False :
+    print('There is not file')
+    exit(909)
 f=open('1.txt' , 'r')
 n=0
 b=[1,2,3,4,5]
