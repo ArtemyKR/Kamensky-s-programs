@@ -3,22 +3,25 @@ if os.path.exists('1.txt')==False :
     print('There is not file')
     exit(909)
 f=open('1.txt' , 'r')
+m=n=0
+k=0
 while True :
     a=f.read(1)
     if not a:
       break
     if a!= ' ':
+        k=1
         if int(a)%2==0:
-            n=n+1
+            n=n+int(a)
         else:
-            m=m+1
-if n==m==0:
+            m=m+int(a)
+if k==0:
     print('Файл пуст')
 else:
     if n>m :
-               print('Четных больше')
+               print('Сумма четных больше')
     elif (n-m)==0 and m!=0:
-               print('Четных и нечетных чисел поровну')
+               print('Суммы четных и нечетных чисел поровну')
     else:
                print('Нечетных больше')
 f.close()
