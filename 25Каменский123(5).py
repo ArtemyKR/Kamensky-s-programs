@@ -25,8 +25,6 @@ while True :
                if pr==0:
                    g=g+1
         pr=5 
-    if (n==5):
-               break
 if v==1:
     print(n)
 else:
